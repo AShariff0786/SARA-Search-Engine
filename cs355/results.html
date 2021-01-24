@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset = "UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel = "stylesheet" href = "styl-res.css">
+  <link rel = "javascript" href = "jscript.js">
+</head>
+<title>SARA</title>
+<nav>
+  <div class = "topnavbar">
+    <a href = "index.html" id="Home" > Home </a>
+    <div class = "dropdown">
+      <button class = "dropbtn" id="Course"> Course
+        <div class = "downarrow">&#x25BE </div>
+      </button>
+      <div class = "dropcontent" >
+        <a href = "https://learn.zybooks.com/zybook/CUNYCSCI355TeitelmanSpring2019">Zybook</a>
+      </div>
+   </div>
+   <div class= "dropdown">
+     <button class = "dropbtn" id= "Search">Search
+       <div class = "downarrow"> &#x25BE </div>
+     </button>
+     <div class = "dropcontent" >
+       <a href = "results.html">Phase 2: Fixed List</a>
+       <a href = "upload.html">Phase 3: From File</a>
+       <a href = "result2.html">Phase 4: Google API</a>
+       <a href = "results3.php">Phase 5: My Search Engine</a>
+     </div>
+   </div>
+   <div class = "dropdown">
+     <button class = "dropbtn" id = "Browser">Browser
+       <div class = "downarrow">&#x25BE</div>
+     </button>
+     <div class= "dropcontent">
+       <a href= "browseinfo.html">Navigator Information</a>
+       <a href= "windowinfo.html">Window Information</a>
+       <a href= "screeninfo.html">Screen Information</a>
+       <a href= "location.html">Location Information</a>
+       <a href= "history.html">Histoy</a>
+     </div>
+   </div>
+   <div class = "dropdown">
+     <button class = "dropbtn" id = "About">About
+       <div class = "downarrow">&#x25BE</div>
+     </button>
+     <div class= "dropcontent">
+       <a href = "about.html">About Us</a>
+       <a href = "contact.html">Contact Us</a>
+     </div>
+   </div>
+   <a href = "admin.php" id="Home"> Admin </a>
+  </div>
+</nav>
+<body>
+  <img src= "IMG_1702.png">
+  <section class = "sec" >
+    <div class= "searchsec">
+      <form action = "results.html">
+        <input type= "text" id="searchbar"  placeholder= " National Basketball Association" readonly>
+        <button type= "submit">
+          <div class= "magnify"> &#x1F50D</div>
+        </button>
+      </form>
+    </div>
+  </section>
+  <div class= "aboutsec">
+    <p id="uploadinfo">
+      <div class= "uploadform">
+        <button id="selectall" onclick="checkAll()">Select All</button>
+        <button id="delselct" onclick="checkNone()">Deselect All</button>
+        <button id="downloadbtn" onclick="down()">Download</button>
+        <select name= "exttype" id="exttype">
+            <option value="json">JSON</option>
+            <option value="csv">CSV</option>
+            <option value="xml">XML</option>
+        </select>
+      </div>
+    </p>
+    <input type='checkbox' class='itemCheck' id='check_1'>
+    <div class='result'>
+      <ul>
+	<li>
+          <h2>2018-2019 NBA Standings</h2>
+	</li>
+	<li>
+          <a href='https://www.espn.com/nba/standings' class='ref'>https://www.espn.com/nba/standings</a>
+	</li>
+	<li class='desc'>See the how well the current standings for your team are or you can keep track on the Knicks' tank for Zion campiagn.</li>
+       </ul>
+   </div>
+   <input type='checkbox' class='itemCheck' id='check_2'>
+   <div class='result'>
+    <ul>
+      <li>
+        <h2>The official site of the NBA</h2>
+      </li>
+      <li>
+        <a href='https://www.nba.com' class='ref'>https://www.nba.com</a>
+      </li>
+      <li class='desc'>Your home for scores, stats, highlights, and more.</li>
+    </ul>
+  </div>
+  <input type='checkbox' class='itemCheck' id='check_3'>
+  <div class='result'>
+    <ul>
+      <li>
+        <h2>Bleacher Report</h2>
+      </li>
+      <li>
+        <a href='https://www.bleacherreport.com/' class='ref'>https://www.bleacherreport.com/</a>
+      </li>
+      <li class='desc'>Sports journalists and bloggers covering NFL, MLB, NBA, NHL, MMA, college football and basketball, NASCAR, fantasy sports and more.</li>
+    </ul>
+  </div>
+  <input type='checkbox' class='itemCheck' id='check_4'>
+  <div class='result'>
+    <ul>
+      <li>
+        <h2>NBA- Youtube</h2>
+      </li>
+      <li>
+        <a href='https://www.youtube.com/user/NBA' class='ref'>https://www.youtube.com/user/NBA</a>
+      </li>
+      <li class='desc'>Watch highlights from the latest games.</li>
+    </ul>
+  </div>
+  <input type='checkbox' class='itemCheck' id='check_5'>
+  <div class='result'>
+    <ul>
+      <li>
+        <h2>NBA- The New York Times</h2>
+      </li>
+      <li>
+        <a href='https://www.nytimes.com/topic/organization/national-basketball-association-nba' class='ref'>https://www.nytimes.com/topic/organization/national-basketball-association-nba</a>
+      </li>
+      <li class='desc'>News about the National Basketball Association. </li>
+    </ul>
+  </div>
+  <input type='checkbox' class='itemCheck' id='check_6'>
+  <div class='result'>
+    <ul>
+      <li>
+        <h2>@NBA- Twitter</h2>
+      </li>
+      <li>
+        <a href='https://twitter.com/NBA' class='ref'>https://twitter.com/NBA</a>
+      </li>
+      <li class='desc'>Keep up with the latest highlights and news related to the NBA. </li>
+    </ul>
+  </div>
+  <input type='checkbox' class='itemCheck' id='check_7'>
+  <div class='result'>
+    <ul>
+      <li>
+        <h2>Yahoo Sports</h2>
+      </li>
+      <li>
+        <a href='https://sports.yahoo.com/' class='ref'>https://sports.yahoo.com/</a>
+      </li>
+      <li class='desc'>Comprehensive news, scores, standings, fantasy games, rumors, and more.</li>
+    </ul>
+  </div>
+  <input type='checkbox' class='itemCheck' id='check_8'>
+  <div class='result'>
+    <ul>
+      <li>
+        <h2>Sports Illustrated</h2>
+      </li>
+      <li>
+        <a href='https://www.si.com/nba' class='ref'>https://www.si.com/nba</a>
+      </li>
+      <li class='desc'>Find NBA news, scores, stats, truth and rumors and fantasy analysis, and more.</li>
+    </ul>
+  </div>
+  <input type='checkbox' class='itemCheck' id='check_9'>
+  <div class='result'>
+    <ul>
+      <li>
+        <h2>Draft Kings</h2>
+      </li>
+      <li>
+        <a href='https://www.draftkings.com/fantasy-basketball' class='ref'>https://www.draftkings.com/fantasy-basketball</a>
+      </li>
+      <li class='desc'>Play daily or weekly fantasy basketball to win prizes and challenges.</li>
+    </ul>
+  </div>
+  <input type='checkbox' class='itemCheck' id='check_10'>
+  <div class='result'>
+    <ul>
+      <li>
+        <h2>NBA 2K19</h2>
+      </li>
+      <li>
+        <a href='https://nba.2k.com/2k19/' class='ref'>https://nba.2k.com/2k19/</a>
+      </li>
+      <li class='desc'>A basketball game that is pay to win.</li>
+    </ul>
+  </div>
+   <script src= "upload.js"></script>
+   <script src= "FileSaver.js"></script>
+</body>
+</html>

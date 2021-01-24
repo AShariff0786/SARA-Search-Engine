@@ -1,0 +1,210 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+#Home{
+    color:white;
+}
+
+.topnavbar{
+    overflow: hidden;
+    background-color: #34495E;
+}
+
+.topnavbar a{
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 20px 16px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.dropdown {
+    overflow: hidden;
+    float: left;
+    background-color: rgb(52, 73, 94);
+}
+
+.downarrow{
+    color: white;
+    float: right;
+}
+
+.dropdown .dropbtn{
+    border: none;
+    outline: none;
+    color: white;
+    text-align:center;
+    padding: 20px 16px;
+    background-color: inherit;
+    font-family: inherit;
+}
+
+.topnavbar a:hover, .dropdown:hover .dropbtn{
+    background-color: #2E86C1;
+}
+
+.dropcontent{
+    display: none;
+    position: absolute;
+    background-color: rgb(127, 179, 213);
+    min-width: 160px;
+    z-index:1;
+}
+
+.dropcontent a{
+    float: none;
+    text-decoration: none;
+    color: white;
+    display: block;
+    text-align: left;
+}
+
+.dropcontent a:hover{
+    background-color: #154360;
+}
+
+
+
+.dropdown:hover .dropcontent{
+    display: block;
+}
+
+img{
+    height:80px;
+    position: absolute;
+    left: 2px;
+    top: 46px;
+}
+
+body{
+    background-repeat: no-repeat;
+    background-image: url("lights.jpg");
+    background-size: 1366px 950px;
+}
+
+.sec{
+   margin-top:15px;
+   margin-left:130px;
+}
+
+input[type=text]{
+    width:615px;
+    height:50%;
+    font-size: 18px;
+    font-family: "Times New Roman", serif;
+    border:solid #76D7C4;
+    border-radius: 8px;
+}
+
+button[type=submit]{
+    position:absolute;
+    border-radius:4px;
+    top: 75px;
+    left: 724px;
+    height:22px;
+    width: 24px;
+    float: right;
+    color:blue;
+    background-color: #76D7C4;
+    border: none;
+}
+
+ul{
+    position:absolute;
+    left:2px;
+    list-style-type:none;
+}
+
+li .title{
+    position:relative;
+    color: white;
+    left: 135px;
+    top: 20px;
+    font-size: 18px;
+}
+
+li .link{
+    position:relative;
+    color: light blue;
+    left: 135px;
+    top: 15px;
+    font-size:18px;
+}
+
+li .description{
+    position:relative;
+    color: white;
+    left: 135px;
+    top: 15px;
+    font-size: 18px;
+}
+
+.aboutsec{
+    width:1000px;
+}
+
+h2{
+    position:relative;
+    color:white;
+    left:125px;
+    top: 20px;
+}
+
+p{
+    position:relative;
+    left:145px;
+    top:24px;
+    color:white;
+}
+
+.uploadform{
+    position: relative;
+    top: 20px;
+    left:125px;
+    color: white;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+.result h2{
+    font-size: 18px;
+    position:relative;
+    top: -48px;
+    left:170px;
+    color:white;
+}
+.result .desc{
+    position:relative;
+    top:-38px;
+    left:170px;
+    color:white;
+    margin-bottom:38px;
+}
+.result .ref{
+    position:relative;
+    top:-40px;
+    left:170px;
+    color:white;
+
+}
+li a{
+    position:relative;
+    top:24px;
+    left:145px;
+    color:white;
+}
+.itemCheck {
+  margin-bottom: 30px;
+  position: relative;
+  margin-top: 24px;
+  margin-left: 145px;
+}
+
+.selectchoice{
+  left:125px;
+}

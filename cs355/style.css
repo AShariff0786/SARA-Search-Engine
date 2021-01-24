@@ -1,0 +1,125 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+#Home{
+    color:white;
+}
+
+
+@media (min-width: 979px) {
+  ul.nav li.dropdown:hover > ul.dropdown-menu {
+    display: block;
+  }
+}
+
+.topnavbar{
+    overflow: hidden;
+    background-color: #34495E;
+    opacity: 0.88;
+}
+
+.topnavbar a{
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 20px 16px;
+    text-decoration: none;
+    font-size: 14px;
+    z-index: 10;
+    opacity:1;
+}
+
+.dropdown {
+    overflow: hidden;
+    float: left;
+    background-color: inherit;
+}
+
+.downarrow{
+    color: white;
+    float: right;
+}
+
+.dropdown .dropbtn{
+    border: none;
+    outline: none;
+    color: white;
+    text-align:center;
+    padding: 20px 16px;
+    background-color: inherit;
+    font-family: inherit;
+}
+
+.topnavbar a:hover, .dropdown:hover .dropbtn{
+    background-color: #2E86C1;
+}
+
+.dropcontent{
+    display: none;
+    position: absolute;
+    background-color: #7FB3D5;
+    min-width: 160px;
+    z-index:1;
+}
+
+.dropcontent a{
+    float: none;
+    text-decoration: none;
+    color: white;
+    display: block;
+    text-align: left;
+}
+
+.dropcontent a:hover{
+    background-color: #154360;
+}
+
+
+
+.dropdown:hover .dropcontent{
+    display: block;
+}
+
+body{
+    background-repeat: no-repeat;
+    background-image: url("lights.jpg");
+    background-size: cover;
+}
+
+img{
+    height:250px;
+    position: absolute;
+    left: 440px;
+    top: 120px;
+}
+
+.sec{
+   margin-top:300px;
+   margin-left:350px;
+}
+
+input[type=text]{
+    width:60%;
+    height:50%;
+    font-size: 18px;
+    font-family: "Times New Roman", serif;
+    border:solid #76D7C4;
+    border-radius: 8px;
+    z-index: 1;
+}
+
+button[type=submit]{
+    z-index: 2;
+    position:absolute;
+    border-radius:4px;
+    top: 360px;
+    left: 940px;
+    height:22px;
+    width: 24px;
+    float: right;
+    color:blue;
+    background-color: #76D7C4;
+    border: none;
+}

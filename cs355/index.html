@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang= "en">
+<head>
+  <meta charset = "UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1 , shrink-to-fit=no">
+  <link rel = "stylesheet" href = "style.css">
+
+</head>
+<title>SARA</title>
+<body>
+<nav>
+  <div class = "topnavbar">
+    <a href = "index.html" id="Home" > Home </a>
+    <div class = "dropdown">
+      <button class = "dropbtn" id="Course"> Course
+        <div class = "downarrow">&#x25BE </div>
+      </button>
+      <div class = "dropcontent" >
+        <a href = "https://learn.zybooks.com/zybook/CUNYCSCI355TeitelmanSpring2019">Zybook</a>
+      </div>
+   </div>
+   <div class= "dropdown">
+     <button class = "dropbtn" id= "Search">Search
+       <div class = "downarrow"> &#x25BE </div>
+     </button>
+     <div class = "dropcontent" >
+       <a href = "results.html">Phase 2: Fixed List</a>
+       <a href = "upload.html">Phase 3: From File</a>
+       <a href = "result2.html">Phase 4: Google API</a>
+       <a href = "results3.php">Phase 5: My Search Engine</a>
+     </div>
+   </div>
+   <div class = "dropdown">
+     <button class = "dropbtn" id = "Browser">Browser
+       <div class = "downarrow">&#x25BE</div>
+     </button>
+     <div class= "dropcontent">
+       <a href= "browseinfo.html">Navigator Information</a>
+       <a href= "windowinfo.html">Window Information</a>
+       <a href= "screeninfo.html">Screen Information</a>
+       <a href= "location.html">Location Information</a>
+       <a href= "history.html">Histoy</a>
+     </div>
+   </div>
+   <div class = "dropdown">
+     <button class = "dropbtn" id = "About">About
+       <div class = "downarrow">&#x25BE</div>
+     </button>
+     <div class= "dropcontent">
+       <a href = "about.html">About Us</a>
+       <a href = "contact.html">Contact Us</a>
+     </div>
+   </div>
+   <a href = "admin.php" id="Home"> Admin </a>
+  </div>
+</nav>
+
+  <div class= "bodyimg"></div>
+  <div class = "body">
+    <img src= "IMG_1702.png">
+    <section class = "sec" >
+      <div class= "searchsec">
+        <form action="results3.php" method="GET">
+	         <input type= "text" id="searchbar" name="q" class="home" placeholder= "Search a term">
+	         <input type= "submit" name="search" id="SearchBtn" value="&#x1F50D">
+        </form>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
